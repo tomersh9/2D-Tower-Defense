@@ -46,3 +46,4 @@ MonoBehaviour:
   looseLabel: {fileID: 0}
   winLabel: {fileID: 0}
   waveFinishLabel: {fileID: 0}
+  pauseLabel: {fileID: 0}

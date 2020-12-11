@@ -70,6 +70,7 @@ namespace Managers {
 
         // Start is called before the first frame update
         private void Start() {
+            _gameSpeed = 1f;
             _money = money;
             _health = maxHealth;
             SetupUI();
@@ -142,6 +143,24 @@ namespace Managers {
             Destroy(gameObject);
         }
 
+        public void ExitToMainMenu() {
+            CleanLevel();
+            FindObjectOfType<LevelLoader>().LoadMainMenuScene();
+            Destroy(gameObject);
+        }
+
+        //called from button click
+        public void RestartLevel() {
+            FindObjectOfType<LevelLoader>().LoadCurrentScene();
+            CleanLevel();
+            Destroy(gameObject);
+        }
+
+        public void SetGameSpeed(float speed) {
+            _gameSpeed = speed;
+            Time.timeScale = speed;
+        }
+
         private void WaveFinished() {
             if (_waveSpawner.GetCurrentState() == SpawnState.Waiting && _enemyManager.GetEnemyCount() == 0) {
                 ActivateWaveFinishDialog();
@@ -172,24 +191,6 @@ namespace Managers {
             BuildManager.GetInstance().ClearMemory();
             _gameSpeed = 1f;
             SetGameSpeed(_gameSpeed);
-        }
-
-        public void ExitToMainMenu() {
-            CleanLevel();
-            FindObjectOfType<LevelLoader>().LoadMainMenuScene();
-            Destroy(gameObject);
-        }
-
-        //called from button click
-        public void RestartLevel() {
-            FindObjectOfType<LevelLoader>().LoadCurrentScene();
-            CleanLevel();
-            Destroy(gameObject);
-        }
-
-        public void SetGameSpeed(float speed) {
-            _gameSpeed = speed;
-            Time.timeScale = speed;
         }
     }
 }

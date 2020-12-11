@@ -25,19 +25,28 @@ namespace Managers {
 
         #endregion
 
+        [SerializeField] private GameObject sellCanvas;
         [SerializeField] private bool rememberSelection; //for debugging purposes
 
+        private Node _nodeSelected;
         private GameObject _towerToBuild;
-        private float offset = 0.5f; //to center sprite in square
-        
+        private float _offset = 0.5f; //to center sprite in square
+        private bool _isSelected = false;
+
         private MouseItem _mouseItem;
         private GameManager _gameManager;
 
         private void Start() {
+            sellCanvas.SetActive(false);
             _mouseItem = GetComponent<MouseItem>();
             _gameManager = GameManager.GetInstance();
         }
         
+        public void SetNodeSelected(Node node) {
+            _nodeSelected = node;
+            print(_nodeSelected.name);
+        }
+
         public void DeselectTowerToManage() {
             _mouseItem.ReleaseTowerFromMouse();
             _towerToBuild = null;
@@ -49,14 +58,28 @@ namespace Managers {
             _mouseItem.ReleaseTowerFromMouse();
             _towerToBuild = towerGO;
             _mouseItem.LockTowerToMouse(towerGO); //hover mode true
+            HideTowerCanvas();
+        }
+
+        public void ToggleTowerDialogOn() {
+            _isSelected = !_isSelected;
+            if (_isSelected) {
+                Vector2 nodePosition = _nodeSelected.transform.position;
+                nodePosition.y += 1.5f; //offset
+                sellCanvas.transform.position = nodePosition;
+                sellCanvas.SetActive(true);
+            }
+            else {
+                sellCanvas.SetActive(false);
+            }
         }
 
         //called from Node Script - return if build success or not
-        public bool BuildTowerOn(Node node) {
+        public bool BuildTowerOn() {
             if (_towerToBuild != null) {
                 int towerCost = _towerToBuild.GetComponent<Tower>().GetCost();
                 if (_gameManager.SpendMoney(towerCost)) {
-                    SpawnTower(node);
+                    SpawnTower();
                     AudioManager.GetInstance().PlayTowerDownSfx();
                     return true;
                 }
@@ -65,31 +88,34 @@ namespace Managers {
             return false;
         }
 
-        public bool SellTowerOn(Node node) {
-            Tower currTower = node.GetComponentInChildren<Tower>();
+        //called from tower ui button clicked
+        public void SellTowerOn() {
+            Tower currTower = _nodeSelected.GetComponentInChildren<Tower>();
             if (currTower != null) {
                 _gameManager.AddToMoney((int) (currTower.GetCost() / 1.5f));
                 currTower.RemoveTower(); //destroy gameObject
                 _towerToBuild = null;
                 AudioManager.GetInstance().PlayTowerSoldSfx();
-                return true;
+                _nodeSelected.ClearNode();
             }
-
-            return false;
+            HideTowerCanvas();
         }
-
+        
         //called form GM
-        public void ClearMemory() {
-            Destroy(gameObject);
+        public void ClearMemory() => Destroy(gameObject);
+
+        private void HideTowerCanvas() {
+            sellCanvas.SetActive(false);
+            _isSelected = false;
         }
 
-        private void SpawnTower(Node node) {
+        private void SpawnTower() {
             _towerToBuild.GetComponent<Tower>().HoverMode(false); //tower can attack when placed
             _mouseItem.ReleaseTowerFromMouse(); //destroy preview
-            Vector2 wantedPos = node.transform.position;
-            wantedPos.y += offset; //adjust to sit right on square
+            Vector2 wantedPos = _nodeSelected.transform.position;
+            wantedPos.y += _offset; //adjust to sit right on square
             GameObject towerGO = Instantiate(_towerToBuild, wantedPos, Quaternion.identity);
-            towerGO.transform.parent = node.transform; //making the tower child of Node so we can delete it later on
+            towerGO.transform.parent = _nodeSelected.transform; //making the tower child of Node so we can delete it later on
             if (!rememberSelection) {
                 _towerToBuild = null;
             }
