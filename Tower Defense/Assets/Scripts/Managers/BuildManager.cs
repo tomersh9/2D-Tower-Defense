@@ -44,7 +44,6 @@ namespace Managers {
         
         public void SetNodeSelected(Node node) {
             _nodeSelected = node;
-            print(_nodeSelected.name);
         }
 
         public void DeselectTowerToManage() {

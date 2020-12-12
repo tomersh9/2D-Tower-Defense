@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using Enemy_Related;
+using Scenes;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -175,7 +176,13 @@ namespace Managers {
         private void WinLevel() {
             _gameSpeed = 0;
             SetGameSpeed(_gameSpeed);
+            UnlockNextLevel();
             _dialogManager.ActivateWinLabel();
+        }
+
+        private void UnlockNextLevel() {
+            int currLvl = Preferences.GetCurrentLvl();
+            Preferences.SetMaxLvl(currLvl + 1);
         }
 
         private void LooseLevel() {

@@ -6,11 +6,6 @@
     <e p="G:\Unity Games\2D-Tower-Defense\Tower Defense" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="DialogManager.cs" t="Include" />
-        <e p="InactiveOnFinish.cs" t="Include" />
-        <e p="MusicPlayer.cs" t="Include" />
-        <e p="Options.cs" t="Include" />
-        <e p="Preferences.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Enemy Related" t="Include">
             <e p="Enemy.cs" t="Include" />
@@ -21,6 +16,7 @@
           <e p="Managers" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="BuildManager.cs" t="Include" />
+            <e p="DialogManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="NodeS" t="Include">
@@ -30,9 +26,17 @@
           <e p="Scenes" t="Include">
             <e p="LevelLoader.cs" t="Include" />
           </e>
+          <e p="Settings" t="Include">
+            <e p="LevelSelector.cs" t="Include" />
+            <e p="Options.cs" t="Include" />
+            <e p="Preferences.cs" t="Include" />
+          </e>
           <e p="Shop" t="Include">
             <e p="Shop.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
+          </e>
+          <e p="Sound" t="Include">
+            <e p="MusicPlayer.cs" t="Include" />
           </e>
           <e p="Tower Related" t="Include">
             <e p="DamageDealer.cs" t="Include" />
@@ -48,6 +52,7 @@
             <e p="DisplayUI.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthDisplay.cs" t="Include" />
+            <e p="InactiveOnFinish.cs" t="Include" />
             <e p="ScoreDisplay.cs" t="Include" />
             <e p="SpeedButton.cs" t="Include" />
           </e>

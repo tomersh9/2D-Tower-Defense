@@ -12384,6 +12384,16 @@ PrefabInstance:
       propertyPath: looseLabel
       value: 
       objectReference: {fileID: 1003571041}
+    - target: {fileID: 3170883194499151095, guid: 726f7da6f36f4ec4dbe65c74aba5eb65,
+        type: 3}
+      propertyPath: money
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170883194499151095, guid: 726f7da6f36f4ec4dbe65c74aba5eb65,
+        type: 3}
+      propertyPath: maxHealth
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3170883194499151112, guid: 726f7da6f36f4ec4dbe65c74aba5eb65,
         type: 3}
       propertyPath: m_Name

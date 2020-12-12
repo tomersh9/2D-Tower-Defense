@@ -22,13 +22,64 @@
     <list default="true" id="4e41e3a9-d201-42fa-9fbd-1f83177158b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower Defense/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower Defense/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower Defense/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower Defense/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Build Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Build Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Towers/Test Tower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Towers/Test Tower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InactiveOnFinish.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InactiveOnFinish.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MusicPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MusicPlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Options.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Options.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas/NodeUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas/NodeUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Strong/Golem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Strong/Golem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Game Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Game Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaveSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WaveSpawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Preferences.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Preferences.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/BuildManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/BuildManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Nodes/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Nodes/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/LevelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/LevelLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wave Spawning/WaveFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wave Spawning/WaveFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Sub Waves/SubWave 7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Waves/Wave 9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +90,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/InactiveOnFinish.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/EditorPluginInterop.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Preferences.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DialogManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MusicPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Options.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,22 +116,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/ShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Related/EnemyPathing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wave Spawning/WaveSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Wave Spawning/WaveFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower Related/IceProjectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy Related/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower Related/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Preferences.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower Related/DamageDealer.cs" />
         <option value="$PROJECT_DIR$/Assets/MusicPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Options.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SpeedButton.cs" />
         <option value="$PROJECT_DIR$/Assets/DialogManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/Node.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wave Spawning/WaveFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Preferences.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/BuildManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/Node.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/BuildManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/LevelSelector.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +185,8 @@
       <workItem from="1607294392248" duration="5689000" />
       <workItem from="1607362180434" duration="36239000" />
       <workItem from="1607617375257" duration="6928000" />
-      <workItem from="1607692958774" duration="4948000" />
+      <workItem from="1607692958774" duration="5555000" />
+      <workItem from="1607770409780" duration="4670000" />
     </task>
     <servers />
   </component>
@@ -156,6 +205,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -173,9 +223,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607439503240" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1607108168621">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1607775142415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607108168621" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607775142415" />
   </component>
 </project>

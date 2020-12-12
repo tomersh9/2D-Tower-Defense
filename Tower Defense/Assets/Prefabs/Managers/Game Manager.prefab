@@ -44,11 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc558b91d8528ec4f9250b7080f4638f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  money: 500
-  winLabel: {fileID: 0}
-  looseLabel: {fileID: 0}
-  waveFinishLabel: {fileID: 0}
+  maxHealth: 50
+  money: 350
 --- !u!114 &7798788310707951670
 MonoBehaviour:
   m_ObjectHideFlags: 0

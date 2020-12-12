@@ -61,6 +61,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseNumOfEnemiesPerSubWave: 5
+  minSpawnRate: 0.5
+  maxSpawnRate: 2
+  minTimeBetweenSubWaves: 1
+  maxTimeBetweenSubWaves: 2
   easyEnemies:
   - {fileID: 7572856519079711476, guid: b53857aa26b9a5c4d9f877e0641f7746, type: 3}
   - {fileID: 6724526037319712600, guid: 240824281e3a4d24c847202436c951ff, type: 3}

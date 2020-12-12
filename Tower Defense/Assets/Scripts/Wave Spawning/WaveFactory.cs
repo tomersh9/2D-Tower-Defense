@@ -9,7 +9,16 @@ namespace Wave_Spawning {
             Hard
         }
 
+        [Header("Wave Timing Configs")]
         [Range(1, 100)] [SerializeField] private int baseNumOfEnemiesPerSubWave;
+
+        [SerializeField] private float minSpawnRate;
+        [SerializeField] private float maxSpawnRate;
+        [SerializeField] private float minTimeBetweenSubWaves;
+        [SerializeField] private float maxTimeBetweenSubWaves;
+        
+        
+        [Header("Enemies Configs")]
         [SerializeField] private GameObject[] easyEnemies;
         [SerializeField] private GameObject[] mediumEnemies;
         [SerializeField] private GameObject[] hardEnemies;
@@ -19,10 +28,10 @@ namespace Wave_Spawning {
 
         public Wave GetWave(int waveIndex) {
             //Normal Waves
-            if (waveIndex < 20) {
+            if (waveIndex <= 10) {
                 _eWaveDifficulty = EWaveDifficulty.Easy;
             }
-            if (waveIndex >= 20 && waveIndex < 30) {
+            if (waveIndex > 10 && waveIndex < 30) {
                 _eWaveDifficulty = EWaveDifficulty.Medium;
             }
             if (waveIndex >= 30) {
@@ -35,9 +44,8 @@ namespace Wave_Spawning {
             if (waveIndex % 10 == 0) {
                 subWaves.Add(new SubWave(bossPrefabs[Random.Range(0, bossPrefabs.Length)], 1));
             }
-
-            print(_eWaveDifficulty);
-            return new Wave(subWaves, 2, 2);
+            
+            return new Wave(subWaves, Random.Range(minSpawnRate,maxSpawnRate), Random.Range(minTimeBetweenSubWaves,maxTimeBetweenSubWaves));
         }
 
         private List<SubWave> GenerateWave(int waveIndex) {
