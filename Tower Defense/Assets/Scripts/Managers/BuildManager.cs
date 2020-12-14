@@ -94,8 +94,8 @@ namespace Managers {
                 _gameManager.AddToMoney((int) (currTower.GetCost() / 1.5f));
                 currTower.RemoveTower(); //destroy gameObject
                 _towerToBuild = null;
-                AudioManager.GetInstance().PlayTowerSoldSfx();
                 _nodeSelected.ClearNode();
+                AudioManager.GetInstance().PlayTowerSoldSfx();
             }
             HideTowerCanvas();
         }

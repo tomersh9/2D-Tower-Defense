@@ -14,6 +14,11 @@ namespace Nodes {
             _buildManager = BuildManager.GetInstance();
         }
 
+        public void ClearNode() {
+            _isPlaced = false;
+            _nodeStyle.SetFreeColor(); //free color
+        }
+
         private void OnMouseDown() {
             _buildManager.SetNodeSelected(this); //set this Node as selected first
 
@@ -31,11 +36,6 @@ namespace Nodes {
                 _isPlaced = true; //cannot build anymore
                 _nodeStyle.SetPlacedColor(); //occupied color
             }
-        }
-
-        public void ClearNode() {
-            _isPlaced = false;
-            _nodeStyle.SetFreeColor(); //free color
         }
     }
 }
