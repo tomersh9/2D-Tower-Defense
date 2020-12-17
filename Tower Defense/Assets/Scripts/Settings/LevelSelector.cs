@@ -10,8 +10,7 @@ namespace Settings {
 
         private void Awake() {
             //get maximum lvl reached
-            _maxLvl = 1;
-            Preferences.SetMaxLvl(_maxLvl);
+            _maxLvl = Preferences.GetMaxLvl();
             
             //loop through all buttons and disable ones not reached
             _lvlButtons = GetComponentsInChildren<Button>();
