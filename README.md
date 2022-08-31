@@ -4,4 +4,7 @@
 Link to play the game online:
 https://sharemygame.com/@tomersh/pixel-defense
 
+Quick look of gameplay:
+https://youtu.be/VuulJpkoJ5Q
+
 ![img](Tower%20Defense/Assets/pixel_defense.png)
